@@ -17,7 +17,7 @@ public class Image {
     @Lob
     @Column(columnDefinition = "LONGBLOB")
     private byte[] imageBytes;
-    @JsonIgnore
+    @JsonIgnore //not send to client
     private long userId;
     @JsonIgnore
     private long postId;
