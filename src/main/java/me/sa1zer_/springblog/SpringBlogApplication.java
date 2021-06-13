@@ -1,13 +1,13 @@
-package me.sa1zer_.sprongblog;
+package me.sa1zer_.springblog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SprongBlogApplication {
+public class SpringBlogApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SprongBlogApplication.class, args);
+		SpringApplication.run(SpringBlogApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package me.sa1zer_.sprongblog.models;
+package me.sa1zer_.springblog.models;
 
 public enum Roles {
 
