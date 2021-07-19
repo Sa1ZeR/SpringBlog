@@ -8,6 +8,7 @@ import java.util.Set;
 public class PostDTO {
 
     private Long id;
+    private String username;
     private String title;
     private String desc;
     private String location;
