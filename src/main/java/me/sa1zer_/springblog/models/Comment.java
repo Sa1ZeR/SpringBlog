@@ -11,7 +11,7 @@ public class Comment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @ManyToOne(fetch = FetchType.EAGER)
     private Post post;
     @Column(columnDefinition = "text", nullable = false)
@@ -20,6 +20,10 @@ public class Comment {
     private long userId;
     @Column(updatable = false)
     private LocalDateTime localDateTime;
+
+    public Comment() {
+
+    }
 
     @PrePersist
     public void onCreate() {

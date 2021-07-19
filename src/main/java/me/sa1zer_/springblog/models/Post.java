@@ -15,7 +15,7 @@ public class Post {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String title;
     private String description;
     private String text;
@@ -31,10 +31,10 @@ public class Post {
     private List<Comment> comments = new ArrayList<>();
 
     @Column(updatable = false)
-    private LocalDateTime localDateTime;
+    private LocalDateTime createdDate;
 
     @PrePersist
     public void onCreate() {
-        localDateTime = LocalDateTime.now();
+        createdDate = LocalDateTime.now();
     }
 }

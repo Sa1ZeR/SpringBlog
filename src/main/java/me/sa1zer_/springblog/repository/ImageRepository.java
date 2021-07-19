@@ -1,4 +1,4 @@
-package me.sa1zer_.springblog.models.repository;
+package me.sa1zer_.springblog.repository;
 
 import me.sa1zer_.springblog.models.Image;
 import org.springframework.data.jpa.repository.JpaRepository;
