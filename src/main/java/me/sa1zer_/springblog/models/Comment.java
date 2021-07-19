@@ -17,7 +17,9 @@ public class Comment {
     @Column(columnDefinition = "text", nullable = false)
     private String text;
     @Column(nullable = false)
-    private long userId;
+    private Long userId;
+    @Column(nullable = false)
+    private String username;
     @Column(updatable = false)
     private LocalDateTime localDateTime;
 
