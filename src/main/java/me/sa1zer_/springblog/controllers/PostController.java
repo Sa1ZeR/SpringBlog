@@ -47,7 +47,7 @@ public class PostController {
         return new ResponseEntity<>(newPost, HttpStatus.OK);
     }
 
-    @PostMapping("/all")
+    @GetMapping("/all")
     public ResponseEntity<List<PostDTO>> getAllPosts() {
         List<PostDTO> allPosts = postService.getAllPosts().stream().map(
           postFacade::postToPostDTO
@@ -56,7 +56,7 @@ public class PostController {
         return new ResponseEntity<>(allPosts, HttpStatus.OK);
     }
 
-    @PostMapping("/user/posts")
+    @GetMapping("/user/posts")
     public ResponseEntity<List<PostDTO>> getAllPostsForUser(Principal principal) {
         List<PostDTO> allPosts = postService.getAllPostsForUser(principal).stream().map(
                 postFacade::postToPostDTO
