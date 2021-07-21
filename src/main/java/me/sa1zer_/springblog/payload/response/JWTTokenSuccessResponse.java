@@ -6,10 +6,10 @@ import lombok.Data;
 public class JWTTokenSuccessResponse {
 
     private boolean success;
-    private String message;
+    private String token;
 
     public JWTTokenSuccessResponse(boolean success, String message) {
         this.success = success;
-        this.message = message;
+        this.token = message;
     }
 }

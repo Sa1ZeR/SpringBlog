@@ -22,7 +22,7 @@ public class SignupRequest {
     @NotEmpty(message = "Please enter username")
     private String username;
     @NotEmpty(message = "Please enter password")
-    @Size(min = 6)
+    @Size(min = 6, message = "Password must be greater or equals than 6")
     private String password;
     private String confPassword;
 }
