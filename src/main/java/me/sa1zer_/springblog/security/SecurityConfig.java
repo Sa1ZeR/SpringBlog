@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) //no session will be created or used by Spring Security
             .and()
                 .authorizeRequests()
-                .antMatchers(SecurityConstants.SIGN_UP_URLS).permitAll()
+                .antMatchers(SecurityConstants.SIGN_UP_URLS, "/simple/**").permitAll()
                 .anyRequest().authenticated();
         http.addFilterBefore(getJWTAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
     }

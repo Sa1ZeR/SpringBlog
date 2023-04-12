@@ -46,11 +46,11 @@ export class LoginComponent implements OnInit {
 
       this.tokenStorage.saveToken(data.token);
       this.tokenStorage.saveUser(data);
-
       this.notificationServ.showSnackBar("Успешная авторизация!");
       this.router.navigate(['/']);
-
-      window.location.reload();
+      setTimeout(function (){
+        window.location.reload();
+      }, 3000);
     }, error => {
       console.log(error);
       this.notificationServ.showSnackBar(error);

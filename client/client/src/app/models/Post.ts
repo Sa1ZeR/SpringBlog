@@ -8,6 +8,6 @@ export interface Post {
   location: string;
   likes?: number;
   image?: File;
-  userLiked?: string[];
+  usersLiked?: string[];
   comments?: Comment[];
 }

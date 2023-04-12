@@ -15,12 +15,16 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatRippleModule} from "@angular/material/core";
+import { NavigationComponent } from './component/navigation/navigation.component';
+import { IndexComponent } from './component/index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    NavigationComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
