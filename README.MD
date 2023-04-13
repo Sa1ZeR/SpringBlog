@@ -14,3 +14,8 @@ beanpostprocessor (after initialization)
 хук на destroy бина (сработает при закрытие контекста)
 
 ![img.png](img.png)
+
+Spring security
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
